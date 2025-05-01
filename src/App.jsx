@@ -1,18 +1,22 @@
-import React from 'react';
+// src/App.jsx
+import React, { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Pages/Home/Home';
 import Video from './Pages/Video/Video';
 
 const App = () => {
+  
+  const [clickSideBar, setClickSideBar] = useState(true);
+
   return (
-    <div>
-      <Navbar />
+    <>
+      <Navbar clickSideBar={clickSideBar} setClickSideBar={setClickSideBar} />
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/Video/:categoryId/:videoId' element={<Video />} />
+        <Route path='/' element={<Home clickSideBar={clickSideBar} />} />
+        <Route path='/video/:categoryId/:videoId' element={<Video clickSideBar={clickSideBar} />} />
       </Routes>
-    </div>
+    </>
   );
 };
 
