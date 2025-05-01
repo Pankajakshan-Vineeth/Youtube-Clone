@@ -9,6 +9,7 @@ import notification_icon from "../../assets/notification.png";
 import profile_icon from "../../assets/jack.png";
 
 const Navbar = ({ clickSideBar, setClickSideBar }) => {
+  
   return (
     <nav className="flex-div">
       <div className="nav-left flex-div">
