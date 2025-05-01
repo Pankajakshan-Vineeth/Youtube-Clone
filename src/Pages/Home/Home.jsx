@@ -1,12 +1,17 @@
 import React from 'react'
 import './Home.css'
 import SideBar from '../../Components/SideBar/SideBar'
+import Feed from '../../Components/Feed/Feed'
+
 
 const Home = ({clickSideBar}) => {
   return (
-    <div>
+    <>
       <SideBar clickSideBar = {clickSideBar}/>
-    </div>
+      <div className={` container ${clickSideBar? "" : 'large-container'}`}>
+      <Feed/>
+      </div>
+    </>
   )
 }
 
