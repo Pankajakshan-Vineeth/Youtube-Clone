@@ -11,6 +11,7 @@ const App = () => {
 
   return (
     <>
+    <YouTubeAuth/>
       <Navbar clickSideBar={clickSideBar} setClickSideBar={setClickSideBar} />
       <Routes>
         <Route path='/' element={<Home clickSideBar={clickSideBar} />} />

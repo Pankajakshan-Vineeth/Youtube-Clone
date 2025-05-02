@@ -15,7 +15,7 @@ import tom from "../../assets/tom.png";
 import megan from "../../assets/megan.png";
 import cameron from "../../assets/cameron.png";
 
-const SideBar = ({ clickSideBar }) => {
+const SideBar = ({ clickSideBar}) => {
   return (
     <div className={`sidebar ${clickSideBar ? "" : "small-sidebar"}`}>
 
@@ -24,15 +24,15 @@ const SideBar = ({ clickSideBar }) => {
           <img src={home} alt="Home" />
           <p>Home</p>
         </div>
-        <div className="side-link">
+        <div className="side-link" >
           <img src={game_icon} alt="Gaming" />
           <p>Gaming</p>
         </div>
-        <div className="side-link">
+        <div className="side-link" >
           <img src={automobiles} alt="Automobiles" />
           <p>Automobiles</p>
         </div>
-        <div className="side-link">
+        <div className="side-link" >
           <img src={sports} alt="Sports" />
           <p>Sports</p>
         </div>
